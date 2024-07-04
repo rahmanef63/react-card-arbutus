@@ -18,6 +18,17 @@ class ContactUs extends React.Component {
               <form className="card-body">
                 <div className="form-control">
                   <label className="label">
+                    <span className="label-text">Name</span>
+                  </label>
+                  <input
+                    type="text"
+                    placeholder="name"
+                    className="input input-bordered"
+                    required
+                  />
+                </div>
+                <div className="form-control">
+                  <label className="label">
                     <span className="label-text">Email</span>
                   </label>
                   <input
@@ -29,22 +40,27 @@ class ContactUs extends React.Component {
                 </div>
                 <div className="form-control">
                   <label className="label">
-                    <span className="label-text">Password</span>
+                    <span className="label-text">Phone</span>
                   </label>
                   <input
-                    type="password"
-                    placeholder="password"
+                    type="tel"
+                    placeholder="phone"
                     className="input input-bordered"
                     required
                   />
+                </div>
+                <div className="form-control">
                   <label className="label">
-                    <a href="#" className="label-text-alt link link-hover">
-                      Forgot password?
-                    </a>
+                    <span className="label-text">Message</span>
                   </label>
+                  <textarea
+                    placeholder="message"
+                    className="textarea textarea-bordered"
+                    required
+                  />
                 </div>
                 <div className="form-control mt-6">
-                  <button className="btn btn-primary">Login</button>
+                  <button className="btn btn-primary">Submit</button>
                 </div>
               </form>
             </div>

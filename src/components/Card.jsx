@@ -14,7 +14,10 @@ const Card = ({ user, onDelete }) => {
         </a>
         <button 
           className="absolute top-2 right-2 text-gray-500"
-          onClick={() => onDelete(user.login)}
+          onClick={() => {
+            onDelete(user.login);
+            alert("User successfully deleted");
+          }}
         >
           &times;
         </button>
