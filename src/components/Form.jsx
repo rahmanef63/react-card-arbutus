@@ -29,7 +29,7 @@ const Form = ({ onAddUser }) => {
   };
 
   return (
-    <div className="searchbar max-w-4xl mx-auto py-12 flex flex-col space-y-4">
+    <div className="searchbar max-w-4xl mx-auto py-24 flex flex-col space-y-4">
       {error && (
         <div role="alert" className="alert alert-error">
           <svg
