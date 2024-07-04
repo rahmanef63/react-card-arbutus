@@ -1,5 +1,4 @@
 import React from "react";
-import { motion } from "framer-motion";
 
 class AboutUs extends React.Component {
   render() {
